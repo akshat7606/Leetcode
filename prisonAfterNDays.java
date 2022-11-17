@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 class prisonAfterNDays{
-    public static int[] prisonAfterNDays(int[] cells, int N) {
+    public static int[] prisonAfterNDaysSol(int[] cells, int N) {
         if (cells == null || cells.length == 0) {
             return cells;
         }
@@ -26,6 +26,6 @@ class prisonAfterNDays{
     public static void main(String[] args) {
         int[] cells = {1,0,0,1,0,0,1,0};
         int N = 1000000000;
-        System.out.println(prisonAfterNDays.prisonAfterNDays(cells , N));
+        System.out.println(prisonAfterNDays.prisonAfterNDaysSol(cells , N));
     }
 }

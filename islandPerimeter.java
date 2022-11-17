@@ -1,6 +1,6 @@
 
 public class islandPerimeter {
-    public static int islandPerimeter(int[][] grid) {
+    public static int islandPerimeterSol(int[][] grid) {
         if (grid == null || grid.length == 0 || grid[0].length == 0) {
             return 0;
         }
@@ -23,6 +23,6 @@ public class islandPerimeter {
 
     public static void main(String[] args) {
         int[][] grid = { { 0, 1, 0, 0 }, { 1, 1, 1, 0 }, { 0, 1, 0, 0 }, { 1, 1, 0, 0 } };
-        System.out.println(islandPerimeter.islandPerimeter(grid));
+        System.out.println(islandPerimeter.islandPerimeterSol(grid));
     }
 }
