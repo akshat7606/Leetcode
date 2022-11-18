@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 //#53 - It's often easiest to modify strings by going from the end of the string to the beginning
+//approach - just take the truelength of the string and traverse on string using truelength and when you find the space just add %20 into stringbuilder.
+//TC - O(n);
+//SC - O(1);
 public class urlify {
     public String sol(String str,int truelength){
         StringBuilder sb = new StringBuilder();
