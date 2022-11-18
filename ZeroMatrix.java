@@ -1,19 +1,31 @@
 //
 public class ZeroMatrix {
-    public static void convertittozero(int[][] matrix,int row, int col){
-        
-    }
     public void solution(int[][] matrix){
         if(matrix.length==0){
             System.out.println("Matrix is empty");
         }
         for(int i=0 ; i<matrix.length ; i++){
-            for(int j=0 ; j<matrix[0].length ; j++){
-                if(matrix[i][j]=='0'){
-                    convertittozero(matrix,i,j);
+            for(int j=0; j<matrix[0].length ; j++){
+                if(matrix[i][j]==0){
+                    matrix[i][0] = 0;
+                    matrix[0][j] = 0;
                 }
             }
         }
+        for(int i=matrix.length-1 ; i>=0 ; i--){
+            for(int j=matrix[0].length-1 ; j>=0 ; j--){
+                if(matrix[i][0]==0 || matrix[0][j]==0){
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+
+        for(int i=0 ; i<matrix.length ; i++){
+            for(int j=0 ; j<matrix[0].length ; j++){
+                System.out.println(matrix[i][j]);
+            }
+        }
+
     }
     public static void main(String[] args) {
         int[][] matrix = {
