@@ -1,4 +1,6 @@
-//
+//approach - just traverse over the matrix and check for the zero if you found that zero just make left and top 0 and traverse once from bottom to make right and bottom as 0;
+//TC - O(n*n);
+//SC - O(1);
 public class ZeroMatrix {
     public void solution(int[][] matrix){
         if(matrix.length==0){
